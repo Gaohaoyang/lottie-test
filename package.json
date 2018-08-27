@@ -5,7 +5,13 @@
   "repository": "git@github.com:Gaohaoyang/lottie-test.git",
   "author": "HyG",
   "license": "MIT",
-  "dependencies": {
-    "webpack": "^4.17.1"
+  "scripts": {
+    "start": "webpack-dev-server --open --progress"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
   }
 }
