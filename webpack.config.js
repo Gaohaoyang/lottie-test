@@ -14,5 +14,10 @@ module.exports = {
     contentBase: path.join(__dirname, '/'),
     compress: true,
     port: 9000,
+    allowedHosts: [
+      '.taobao.com',
+    ],
+    useLocalIp: true,
+    host: '0.0.0.0',
   },
 };
