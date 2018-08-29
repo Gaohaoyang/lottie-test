@@ -4,8 +4,8 @@ module.exports = {
 
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'index.js'
+    path: path.join(__dirname, 'build'),
+    filename: 'index.js',
   },
 
   devServer: {
@@ -17,5 +17,6 @@ module.exports = {
     ],
     useLocalIp: true,
     host: '0.0.0.0',
+    publicPath: '/build/',
   },
 };
