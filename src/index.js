@@ -4,6 +4,6 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: '../src/water.json',
-  path: '../src/fingerPrint.json',
+  // path: '/assets/water.json',
+  path: '/assets/fingerPrint.json',
 })
