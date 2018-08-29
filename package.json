@@ -7,14 +7,21 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open --progress --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "eslint": "eslint --fix ./src"
   },
   "dependencies": {
     "lottie-web": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.6"

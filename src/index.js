@@ -1,4 +1,5 @@
 import lottie from 'lottie-web'
+
 lottie.loadAnimation({
   container: document.querySelector('#container'),
   renderer: 'svg',
