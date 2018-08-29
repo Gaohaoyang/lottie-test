@@ -27,7 +27,7 @@ const render = () => {
     name: 'myLottieAnim',
     loop: true,
     autoplay: true,
-    path: '/assets/funky_chicken.json',
+    path: './assets/funky_chicken.json',
     // path: '/assets/water.json',
     // path: '/assets/fingerPrint.json',
   })
