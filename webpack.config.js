@@ -15,16 +15,23 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader'
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
           }, {
             loader: 'eslint-loader',
             options: {
               // quiet: true
-            }
-          }
-        ]
-      }
-    ]
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+    ],
   },
 
   devServer: {
@@ -38,4 +45,4 @@ module.exports = {
     host: '0.0.0.0',
     publicPath: '/build/',
   },
-};
+}
